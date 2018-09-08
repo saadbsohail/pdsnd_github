@@ -24,7 +24,6 @@ def get_filters():
             #print("This is what you entered in lower case: {}".format(city.lower()))
             if CITY_DATA.get(city.lower()) != None:
                 #Proceed with next question if the city entered by user is one of the three we are looking for
-                #print("Your entered city was found")
                 break
             elif CITY_DATA.get(city.lower()) == None and (city.lower() == "nyc" or city.lower() == "new york"):
                 #If user enters 'nyc' or 'new york'
@@ -45,7 +44,6 @@ def get_filters():
             month = input("\nWhich month\'s data do you want to see? \nJanuary, February, March, April, May, June or All? ")
             if month.lower() in ["january", "february", "march", "april", "may", "june", "all"]:
                 #Proceed with next question if the month entered by user is one from the list
-                #print("Your entered month was found")
                 break
             elif month.lower() == "jan":
                 #If user enters 'jan'
@@ -300,8 +298,8 @@ def main():
                 more_trips_detail = input("\nEnter 'm' if you want to see more trips or 'n' otherwise: ")
                 start = num
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Enter \'yes\' or \'no\'.\n')
+        if restart.lower() != 'yes' or restart.lower() != 'y':
             break
 
 
