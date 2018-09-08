@@ -297,8 +297,8 @@ def main():
                 more_trips_detail = input("\nEnter 'm' if you want to see more trips or 'n' otherwise: ")
                 start = num
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Enter \'yes\' or \'no\'.\n')
+        if restart.lower() != 'yes' or restart.lower() != 'y':
             break
 
 
