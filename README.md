@@ -5,7 +5,7 @@
 Exploring US bikeshare data
 
 ### Description
-Calculate statistics for US bikeshare data for three cities using an interactive environment where user chooses the data and filter for a dataset to analyze.
+Calculate statistics for US bikeshare data for three cities using an interactive environment where user chooses the data and filter for a dataset to analyze - developed in Python (using NumPy and Pandas)
 
 ### Files used
 - bikeshare_2.py
