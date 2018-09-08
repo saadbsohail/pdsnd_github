@@ -281,7 +281,10 @@ def main():
         user_stats(df,city)
 
         trip_detail = input("Would you like to see individual trips data? Enter 'yes' or 'no': ")
-
+        '''To display raw data (based on user's input):
+        1. Check if user wants to view indiviual trips' data
+        2. Display 5 trips at a time
+        3. Keep displaying 5 trips at a time until the user says otherwise'''
         if trip_detail.lower() == 'yes' or trip_detail.lower() == 'y':
             more_trips_detail = ''
             start = 0
